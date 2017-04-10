@@ -1,0 +1,104 @@
+
+#root{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  margin: 40px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  width: 480px;
+  border: 5px solid #3498DB;
+  border-radius: 5px;
+  
+}
+.App-header{
+  background-color: #3498DB;
+  padding: 1px;
+  color: white;
+}
+
+.input{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 40px;
+  padding-bottom: 0px;
+}
+label{
+  width: 400px;
+  font-size: 16px;
+  text-align: left; 
+}
+input.form-input{
+  font-size: 18px;
+  display: table-cell;
+  vertical-align: middle;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid #2980B9;
+  margin-bottom: 1.5em;
+  margin-top: 0.5em;
+  width: 100%; 
+}
+.button{
+  display: flex;
+  justify-content: flex-end;
+}
+.submit {background-color: #3498DB;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    padding: 14px 40px;
+ }
+.list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+}
+.film {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    font-size: 18px;
+    border-bottom: 2px solid #3498DB;
+}
+.film div{
+  flex-grow: 1;
+}
+.film:first-of-type{
+  background-color: #2980B9; 
+  border: 0px;
+  height: 1.5em;
+  line-height: 1.5em;
+}
+
+.searchBox {
+  font-size: 18px;
+  display: table-cell;
+  vertical-align: middle;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid #2980B9;
+  margin-bottom: 1.5em;
+  margin-top: 0.5em;
+  width: 100%; 
+}
+
+.ListContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 40px;
+}
+
