@@ -1,6 +1,8 @@
 import React, {Component} from 'react';  
-import SingleInput from '../components/SingleInput';  
+import SingleInput from '../components/SingleInput'; 
 
+
+const film =[];
 
 class FormContainer extends Component {  
   constructor(props) {
@@ -8,12 +10,14 @@ class FormContainer extends Component {
     this.state = {
       title: '',
       actor: '',
-      year: ''
+      year: '',
+      filmList: [] 
     };
     this.handleFormSubmit = this.handleFormSubmit.bind(this);
     this.handleTitle = this.handleTitle.bind(this);
     this.handleActor = this.handleActor.bind(this);
     this.handleYear = this.handleYear.bind(this);
+    this.handleFilmList = this.handleFilmList.bind(this);
   }
 
   handleTitle(e) {
@@ -31,7 +35,8 @@ class FormContainer extends Component {
      this.setState({
       title: "",
       actor: "",
-      year: ""
+      year: "",
+   
     });
   }
 
@@ -46,11 +51,31 @@ class FormContainer extends Component {
     function addFilm(){ 
         localStorage.setItem(key, JSON.stringify(film));
     };
-    addFilm();
     this.handleClearForm(e);
+    addFilm();
+    this.handleFilmList();
   }
- 
+
+  handleFilmList(){
+    var keys = Object.keys(localStorage),
+        i = keys.length;
+    while ( i-- ) {
+    film.push( localStorage.getItem(keys[i]))     
+      }
+    // console.log('this is film:' + film); 
+    this.setState({filmList: film});
+    console.log('this is filmList' + this.state.filmList);
+  }
+  componentdidMount(){
+    if (this.state.filmList !== film) {
+     this.handleFilmList()
+    } else {
+      return
+    }
+  }
+  
   render() {
+    this.handleFilmList()
     return (
       <form className="container" onSubmit={this.handleFormSubmit}>
         <div className="input">
@@ -87,6 +112,7 @@ class FormContainer extends Component {
           </div>
         </div>
       </form>
+      
     );
   }
 }

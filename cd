@@ -1,0 +1,37 @@
+[33mcommit 1b7a4634092f544955f0231bc2c9ce68e3432529[m
+Author: Jermain Joseph <jermjoseph@gmail.com>
+Date:   Tue May 9 15:27:23 2017 -0400
+
+    film list
+
+[33mcommit 114b9e0d78bd6ae4cd5d375f635b2ba15c42decc[m
+Author: Jermain Joseph <jermjoseph@gmail.com>
+Date:   Tue May 9 15:26:16 2017 -0400
+
+    creating filmlist
+
+[33mcommit 5c4bc9b5f54c6f0568dc52377c440fed4db4b316[m
+Author: Jermain Joseph <jermjoseph@gmail.com>
+Date:   Tue May 9 12:35:53 2017 -0400
+
+    Revert "revert"
+    
+    This reverts commit fe4b906b808c30ec875c4ec825d62048c92038ca.
+
+[33mcommit fe4b906b808c30ec875c4ec825d62048c92038ca[m
+Author: Jermain Joseph <jermjoseph@gmail.com>
+Date:   Tue May 9 12:35:33 2017 -0400
+
+    revert
+
+[33mcommit 3dd4d2e8b27882cd6c971ce0e5980d6cccf227f4[m
+Author: Jermain Joseph <jermjoseph@gmail.com>
+Date:   Mon Apr 10 08:33:44 2017 -0400
+
+    commit
+
+[33mcommit cf79513867b4f9852af2bab6bc74cb461f9dbfb0[m
+Author: Jermain Joseph <jermjoseph@gmail.com>
+Date:   Mon Apr 10 08:16:02 2017 -0400
+
+    :circus_tent: Added .gitattributes & .gitignore files
